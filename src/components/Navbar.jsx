@@ -1,9 +1,13 @@
 import "@/styles/navbar.scss";
+import { Card, ThemeToggleButton } from "@/components";
 
 export function Navbar() {
   return (
-    <nav>
-      <span>alihan ayaz</span>
-    </nav>
+    <Card>
+      <nav>
+        <span>alihan ayaz</span>
+        <ThemeToggleButton />
+      </nav>
+    </Card>
   );
 }

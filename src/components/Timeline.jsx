@@ -1,18 +1,17 @@
 import "@/styles/timeline.scss";
 import timeline from "@/data/timeline.json";
-import { TimelineItem } from "@/components";
+import { Card, TimelineItem } from "@/components";
 
 export function Timeline() {
   return (
-    <div className="timeline-container">
-      <div className="timeline">
-        {timeline.map((item, i) => (
-          <TimelineItem
-            key={i}
-            item={item}
-          />
-        ))}
+    <Card>
+      <div className="timeline-container">
+        <div className="timeline">
+          {timeline.map((item, i) => (
+            <TimelineItem key={i} item={item} />
+          ))}
+        </div>
       </div>
-    </div>
+    </Card>
   );
 }

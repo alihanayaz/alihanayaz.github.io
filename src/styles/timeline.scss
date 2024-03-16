@@ -1,11 +1,8 @@
-@import "./colors";
 @import "./breakpoints";
 
 .timeline-container {
   display: flex;
   justify-content: center;
-  background-color: $bg-gray;
-  border-radius: 1.5rem;
   padding: 2rem;
 }
 

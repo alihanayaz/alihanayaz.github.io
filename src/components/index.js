@@ -5,3 +5,5 @@ export { Social } from "./Social";
 export { SocialItem } from "./SocialItem";
 export { Timeline } from "./Timeline";
 export { TimelineItem } from "./TimelineItem";
+export { Card } from "./Card";
+export { ThemeToggleButton } from "./ThemeToggleButton";
