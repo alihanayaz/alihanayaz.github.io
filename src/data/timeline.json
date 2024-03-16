@@ -1,0 +1,20 @@
+[
+    {
+        "year": "2022",
+        "title": "Frontend Developer",
+        "duration": "present",
+        "detail": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam nam quibusdam nostrum voluptate nobis atque, a et voluptatum ipsum quas magni non, optio, consequuntur pariatur porro ratione voluptatem blanditiis velit?"
+    },
+    {
+        "year": "2019",
+        "title": "Bachelor's Degree in German Studies",
+        "duration": "present",
+        "detail": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam nam quibusdam nostrum voluptate nobis atque, a et voluptatum ipsum quas magni non, optio, consequuntur pariatur porro ratione voluptatem blanditiis velit?"
+    },
+    {
+        "year": "2019",
+        "title": "First Line of Code",
+        "duration": "the beginning",
+        "detail": "I wrote my first line of real code that started this journey."
+    }
+]

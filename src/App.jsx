@@ -1,5 +1,5 @@
 import "@/index.scss";
-import { Navbar, Layout, Hero, Social } from "@/components";
+import { Navbar, Layout, Hero, Social, Timeline } from "@/components";
 
 function App() {
   return (
@@ -7,6 +7,7 @@ function App() {
       <Navbar />
       <Hero />
       <Social />
+      <Timeline />
     </Layout>
   );
 }
