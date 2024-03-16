@@ -1,0 +1,26 @@
+[
+    {
+        "name": "linkedin",
+        "url": "https://example.com"
+    },
+    {
+        "name": "github",
+        "url": "https://example.com"
+    },
+    {
+        "name": "twitter",
+        "url": "https://example.com"
+    },
+    {
+        "name": "instagram",
+        "url": "https://example.com"
+    },
+    {
+        "name": "behance",
+        "url": "https://example.com"
+    },
+    {
+        "name": "dribbble",
+        "url": "https://example.com"
+    }
+]
