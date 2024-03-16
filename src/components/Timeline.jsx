@@ -7,6 +7,7 @@ export function Timeline() {
     <Card>
       <div className="timeline-container">
         <div className="timeline">
+          <h3>My Journey So Far</h3>
           {timeline.map((item, i) => (
             <TimelineItem key={i} item={item} />
           ))}

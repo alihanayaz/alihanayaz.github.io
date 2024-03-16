@@ -5,7 +5,7 @@ export function Navbar() {
   return (
     <Card>
       <nav>
-        <span>alihan ayaz</span>
+        <h1>alihan ayaz</h1>
         <ThemeToggleButton />
       </nav>
     </Card>

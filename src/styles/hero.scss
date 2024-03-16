@@ -28,7 +28,7 @@ main {
       filter: grayscale(100%);
     }
 
-    h1 {
+    h2 {
       margin: 0;
       font-size: 64px;
       font-weight: inherit;
@@ -46,7 +46,6 @@ main {
     flex-direction: column;
     align-items: stretch;
     justify-content: center;
-    text-align: center;
     padding: 2.5rem 3rem;
     gap: 2rem;
 
@@ -56,12 +55,13 @@ main {
       align-self: center;
     }
 
-    h2 {
+    span {
       margin: 0;
       font-size: 56px;
       font-weight: inherit;
       line-height: 64px;
       letter-spacing: -0.03em;
+      text-align: left;
     }
 
     a {
@@ -69,6 +69,7 @@ main {
       border-radius: 50px;
       padding: 1.5rem 2rem;
       font-size: 2rem;
+      text-align: center;
     }
   }
 }

@@ -1,7 +1,7 @@
 import "@/styles/themetogglebutton.scss";
 import { useTheme } from "@/context/ThemeContext";
-import Sun from "@/assets/sun-solid.svg?react";
-import Moon from "@/assets/moon-solid.svg?react";
+import Sun from "@/assets/sun.svg?react";
+import Moon from "@/assets/moon.svg?react";
 
 export function ThemeToggleButton() {
   const { isDarkMode, toggleTheme } = useTheme();

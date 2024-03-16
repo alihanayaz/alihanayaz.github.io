@@ -7,11 +7,11 @@ export function TimelineItem({ item }) {
       <li>
         <div className="bullet-point"></div>
         <div className="heading">
-          <span className="year">{year}</span>
-          <span className="title">{title}</span>
-          <span className="duration">{duration}</span>
+          {year && <span className="year">{year}</span>}
+          {title && <span className="title">{title}</span>}
+          {duration && <span className="duration">{duration}</span>}
         </div>
-        <p className="detail">{detail}</p>
+        {detail && <p className="detail">{detail}</p>}
       </li>
     </ol>
   );

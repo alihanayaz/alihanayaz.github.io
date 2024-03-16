@@ -1,26 +1,26 @@
 [
     {
         "name": "linkedin",
-        "url": "https://example.com"
+        "url": "https://www.linkedin.com/in/alihan-ayaz"
     },
     {
         "name": "github",
-        "url": "https://example.com"
+        "url": "https://github.com/alihanayaz"
     },
     {
         "name": "twitter",
-        "url": "https://example.com"
+        "url": "https://twitter.com/alhnayz"
     },
     {
-        "name": "instagram",
-        "url": "https://example.com"
+        "name": "upwork",
+        "url": "https://www.upwork.com/freelancers/~012e4a3f1eed70c4f8"
     },
     {
         "name": "behance",
-        "url": "https://example.com"
+        "url": "https://www.behance.net/alihanayaz"
     },
     {
         "name": "dribbble",
-        "url": "https://example.com"
+        "url": "https://dribbble.com/alihanayaz"
     }
 ]
