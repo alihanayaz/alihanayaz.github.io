@@ -1,0 +1,6 @@
+@use "variables.scss" as *;
+
+.card {
+  border-radius: $radius-lg;
+  border: 1px solid $border-color;
+}

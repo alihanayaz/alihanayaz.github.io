@@ -1,0 +1,21 @@
+@use "reset.scss";
+@use "variables" as *;
+@use "media-queries.scss" as *;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: $text-color;
+  font-size: $font-md;
+
+  .container {
+    max-width: map-get($breakpoints, xlarge);
+    padding: $spacing-sm $spacing-xs;
+
+    @include media-query(xlarge) {
+      margin: $spacing-lg auto;
+    }
+  }
+}

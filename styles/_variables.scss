@@ -1,7 +1,7 @@
 // color
 $text-color: #000000;
 $text-fade: #8a8a93;
-$background-color: #ffffff;
+$background-color: #fafafa;
 $background-active-color: #efefef;
 $border-color: #dcdcdc;
 
@@ -9,12 +9,15 @@ $border-color: #dcdcdc;
 $spacing-xs: 0.25rem;
 $spacing-sm: 0.5rem;
 $spacing-md: 1rem;
-$spacing-lg: 2rem;
+$spacing-lg: 1.5rem;
+$spacing-xl: 2rem;
 
 // font size
 $font-sm: 0.875rem;
 $font-md: 1.125rem;
 $font-lg: 1.5rem;
+$font-xl: 2rem;
 
 // border radius
-$radius: 2.5rem;
+$radius-lg: 1.5rem;
+$radius-xl: 2.5rem;
