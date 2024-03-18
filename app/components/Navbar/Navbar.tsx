@@ -1,5 +1,5 @@
 import styles from "./Navbar.module.scss";
-import Card from "../Card/Card";
+import { Card } from "../Card";
 
 export function Navbar() {
   return (

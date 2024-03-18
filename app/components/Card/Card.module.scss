@@ -1,6 +1,34 @@
-@use "variables.scss" as *;
+@use "variables" as *;
+@use "media-queries" as *;
 
 .card {
   border-radius: $radius-lg;
   border: 1px solid $border-color;
+  padding: $spacing-md;
+
+  &.hasContent {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: $spacing-xl;
+
+    .icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: $spacing-sm;
+      background-color: $background-icon;
+      border-radius: $radius-lg;
+    }
+
+    h3 {
+      font-size: $font-xl;
+      font-weight: bold;
+    }
+
+    p {
+      color: $text-fade;
+      font-size: $font-sm;
+    }
+  }
 }

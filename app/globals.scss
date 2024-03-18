@@ -1,6 +1,6 @@
-@use "reset.scss";
+@use "reset";
 @use "variables" as *;
-@use "media-queries.scss" as *;
+@use "media-queries" as *;
 
 * {
   box-sizing: border-box;
@@ -9,12 +9,14 @@
 body {
   color: $text-color;
   font-size: $font-md;
+  line-height: $spacing-lg;
+  letter-spacing: 0.05rem;
 
   .container {
     max-width: map-get($breakpoints, xlarge);
     padding: $spacing-sm $spacing-xs;
 
-    @include media-query(xlarge) {
+    @include media-query(medium) {
       margin: $spacing-lg auto;
     }
   }
