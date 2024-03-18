@@ -2,24 +2,15 @@
 @use "media-queries" as *;
 
 .card {
-  border-radius: $radius-lg;
   border: 1px solid $border-color;
   padding: $spacing-md;
+  width: 100%;
+  height: 100%;
 
-  &.hasContent {
+  .content {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    gap: $spacing-xl;
-
-    .icon {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: $spacing-sm;
-      background-color: $background-icon;
-      border-radius: $radius-lg;
-    }
+    gap: $spacing-md;
 
     h3 {
       font-size: $font-xl;

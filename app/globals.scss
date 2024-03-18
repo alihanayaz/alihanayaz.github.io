@@ -7,16 +7,28 @@
 }
 
 body {
+  background-color: $background-color-dark;
   color: $text-color;
   font-size: $font-md;
   line-height: $spacing-lg;
   letter-spacing: 0.05rem;
 
   .container {
-    max-width: map-get($breakpoints, xlarge);
-    padding: $spacing-sm $spacing-xs;
+    max-width: map-get($breakpoints, medium);
+    margin: 0 auto;
+    padding: $spacing-sm;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
 
-    @include media-query(medium) {
+    & > * {
+      background-color: $background-color;
+    }
+
+    @include media-query(large) {
+      padding: 12rem $spacing-sm;
       margin: $spacing-lg auto;
     }
   }
