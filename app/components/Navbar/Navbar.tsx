@@ -1,20 +1,31 @@
+"use client";
+import { usePathname } from "next/navigation";
 import styles from "./Navbar.module.scss";
 import Link from "next/link";
 import Image from "next/image";
+import cn from "classnames";
 
 export function Navbar() {
+  const pathname = usePathname();
+
   const links = [
     { label: "Home", href: "/" },
     { label: "Journey", href: "/journey" },
-    { label: "Bookmark", href: "/bookmarks" },
-    { label: "Notebook", href: "/notebook" },
   ];
+
   return (
     <nav className={styles.navbar}>
       <div className={styles.list}>
-        {links.map((link) => {
+        {links.map((link, i) => {
+          const isActive = pathname === link.href;
           return (
-            <Link href={link.href} className={styles.listItem}>
+            <Link
+              href={link.href}
+              className={cn(styles.listItem, {
+                [styles.active]: isActive,
+              })}
+              key={i}
+            >
               <div className={styles.icon}>
                 <Image
                   src={`/${link.label}.svg`}

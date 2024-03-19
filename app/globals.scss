@@ -8,28 +8,51 @@
 
 body {
   background-color: $background-color-dark;
-  color: $text-color;
+  color: $background-color;
   font-size: $font-md;
   line-height: $spacing-lg;
   letter-spacing: 0.05rem;
+  min-height: 100vh;
+
+  & > svg {
+    pointer-events: none;
+    mix-blend-mode: soft-light;
+    isolation: isolate;
+    position: fixed;
+    z-index: 50;
+    opacity: 0.7;
+  }
+
+  .circle {
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    z-index: -1;
+    background-color: $text-fade;
+    border-radius: $radius-xl;
+    filter: blur(150px);
+
+    &.one {
+      left: 0;
+      top: 0;
+    }
+
+    &.two {
+      bottom: 0;
+      right: 0;
+    }
+  }
 
   .container {
     max-width: map-get($breakpoints, medium);
     margin: 0 auto;
     padding: $spacing-sm;
-    height: 100vh;
     width: 100%;
     display: flex;
     flex-direction: column;
-    overflow: hidden;
-
-    & > * {
-      background-color: $background-color;
-    }
 
     @include media-query(large) {
       padding: 12rem $spacing-sm;
-      margin: $spacing-lg auto;
     }
   }
 }
