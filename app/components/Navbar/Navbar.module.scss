@@ -3,6 +3,7 @@
 @use "transitions" as *;
 
 .navbar {
+  margin-bottom: $spacing-xxl;
   @mixin active {
     background-color: $background-color-hover;
     color: $text-color;

@@ -33,7 +33,7 @@ export default function RootLayout({
         <div className="circle two"></div>
         <div className="container">
           <Navbar />
-          {children}
+          <main>{children}</main>
         </div>
       </body>
     </html>
