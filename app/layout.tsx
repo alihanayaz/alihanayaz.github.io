@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Space_Grotesk } from "next/font/google";
 import "@/globals.scss";
 import Navbar from "@/components/Navbar";
+import Socials from "@/components/Socials";
 
 const spaceGrotesk = Space_Grotesk({ subsets: ["latin"] });
 
@@ -35,6 +36,7 @@ export default function RootLayout({
           <Navbar />
           <main>{children}</main>
         </div>
+        <Socials />
       </body>
     </html>
   );
