@@ -9,7 +9,12 @@ export function Socials() {
       <div className={styles.socials}>
         {socialsData.map((social, i) => {
           return (
-            <Link href={social.url} key={i}>
+            <Link
+              href={social.url}
+              key={i}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               {social.name}
             </Link>
           );

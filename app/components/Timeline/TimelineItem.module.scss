@@ -45,7 +45,7 @@
         margin-bottom: $spacing-sm;
       }
 
-      @include media-query(medium) {
+      @include media-query(large) {
         flex-direction: row;
         align-items: center;
         margin-bottom: $spacing-md;

@@ -1,5 +1,6 @@
 @use "variables" as *;
 @use "transitions" as *;
+@use "media-queries" as *;
 
 .socials {
   display: flex;
@@ -11,8 +12,10 @@
   & > * {
     padding: $spacing-xs $spacing-sm;
     @include transition-properties;
-    &:hover {
-      color: $text-fade;
+    @include media-query(large) {
+      &:hover {
+        color: $text-fade;
+      }
     }
   }
 }

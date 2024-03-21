@@ -4,17 +4,20 @@ import styles from "./Navbar.module.scss";
 import Link from "next/link";
 import Image from "next/image";
 import cn from "classnames";
+import { capitalizeFirstLetter } from "@/lib/helpers";
+import { Profile } from "./Profile";
 
 export function Navbar() {
   const pathname = usePathname();
 
   const links = [
-    { label: "Home", href: "/" },
-    { label: "Journey", href: "/journey" },
+    { label: "home", href: "/" },
+    { label: "journey", href: "/journey" },
   ];
 
   return (
-    <nav className={styles.navbar}>
+    <div className={styles.navbar}>
+      <Profile />
       <div className={styles.list}>
         {links.map((link, i) => {
           const isActive = pathname === link.href;
@@ -34,11 +37,11 @@ export function Navbar() {
                   alt={link.label}
                 ></Image>
               </div>
-              <span>{link.label}</span>
+              <span>{capitalizeFirstLetter(link.label)}</span>
             </Link>
           );
         })}
       </div>
-    </nav>
+    </div>
   );
 }
