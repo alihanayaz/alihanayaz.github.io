@@ -23,37 +23,37 @@ body {
     opacity: 0.7;
   }
 
-  .circle {
-    height: 150px;
-    width: 150px;
-    position: absolute;
-    z-index: -1;
-    background-color: $text-fade;
-    border-radius: $radius-xl;
-    filter: blur(150px);
-
-    &.one {
-      left: 0;
-      top: 0;
-    }
-
-    &.two {
-      bottom: 0;
-      right: 0;
-    }
-  }
-
   .container {
     max-width: map-get($breakpoints, medium);
     margin: 0 auto;
-    padding: $spacing-sm;
     width: 100%;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    padding: $spacing-md;
+
+    main {
+      z-index: 10;
+    }
+
+    .gradient-wrapper {
+      position: absolute;
+      inset: 0;
+      overflow: hidden;
+      pointer-events: none;
+
+      .gradient {
+        background: url(../public/gradient.jpg);
+        background-repeat: no-repeat;
+        mask-image: linear-gradient(to bottom, black 50%, transparent 70%);
+        width: 100%;
+        height: 100%;
+        opacity: 0.3;
+      }
+    }
 
     @include media-query(large) {
-      padding: 12rem $spacing-sm;
+      padding: 12rem 0;
     }
   }
 }

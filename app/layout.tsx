@@ -30,11 +30,14 @@ export default function RootLayout({
           </filter>
           <rect width="100%" height="100%" filter="url(#filterNoise)"></rect>
         </svg>
-        <div className="circle one"></div>
-        <div className="circle two"></div>
         <div className="container">
-          <Navbar />
-          <main>{children}</main>
+          <main>
+            <Navbar />
+            {children}
+          </main>
+          <div className="gradient-wrapper">
+            <div className="gradient"></div>
+          </div>
         </div>
         <Socials />
       </body>
