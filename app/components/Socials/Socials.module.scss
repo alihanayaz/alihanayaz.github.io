@@ -1,0 +1,21 @@
+@use "variables" as *;
+@use "transitions" as *;
+@use "media-queries" as *;
+
+.socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: $spacing-md;
+
+  & > * {
+    padding: $spacing-xs $spacing-sm;
+    @include transition-properties;
+    @include media-query(large) {
+      &:hover {
+        color: $text-fade;
+      }
+    }
+  }
+}

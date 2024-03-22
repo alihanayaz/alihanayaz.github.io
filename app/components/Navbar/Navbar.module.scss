@@ -1,0 +1,68 @@
+@use "variables" as *;
+@use "media-queries" as *;
+@use "transitions" as *;
+
+.navbar {
+  margin-bottom: $spacing-xxl;
+
+  & > :not(:last-child) {
+    margin-bottom: $spacing-lg;
+  }
+
+  @mixin active {
+    background-color: $background-color-hover;
+    color: $text-color;
+
+    .icon {
+      background-color: $background-color-dark;
+
+      & > * {
+        filter: invert(1);
+      }
+    }
+  }
+
+  .list {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: $font-sm;
+    flex-wrap: wrap;
+    gap: $spacing-xs;
+
+    .listItem {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      gap: $spacing-sm;
+      padding: $spacing-md;
+      @include transition-properties;
+
+      .icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $background-color;
+        padding: $spacing-sm;
+        border-radius: $radius-sm;
+        @include transition-properties;
+
+        & > * {
+          width: $font-sm;
+          height: $font-sm;
+          @include transition-properties;
+        }
+      }
+
+      @include media-query(large) {
+        &:hover {
+          @include active;
+        }
+      }
+    }
+
+    .active {
+      @include active;
+    }
+  }
+}
