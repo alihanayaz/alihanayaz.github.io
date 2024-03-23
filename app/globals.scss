@@ -45,7 +45,7 @@ body {
       .gradient {
         background: url(../public/gradient.jpg);
         background-repeat: no-repeat;
-        mask-image: linear-gradient(to bottom, black 50%, transparent 70%);
+        mask-image: linear-gradient(to bottom, $background-color-dark 50%, transparent 100%);
         width: 100%;
         height: 100%;
         opacity: 0.3;

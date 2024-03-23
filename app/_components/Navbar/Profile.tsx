@@ -10,12 +10,11 @@ export function Profile() {
         className={styles.profilePhoto}
         width={64}
         height={64}
+        priority={true}
       />
       <div className={styles.profileInfo}>
         <h1>Alihan Ayaz</h1>
-        <h2>
-          Frontend Developer at <span>Cimri</span>
-        </h2>
+        <h2>Software Developer</h2>
       </div>
     </div>
   );

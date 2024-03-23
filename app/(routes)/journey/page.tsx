@@ -1,5 +1,5 @@
-import Card from "@/components/Card";
-import Timeline from "@/components/Timeline";
+import Card from "@/_components/Card";
+import Timeline from "@/_components/Timeline";
 
 export default function Page() {
   return (
