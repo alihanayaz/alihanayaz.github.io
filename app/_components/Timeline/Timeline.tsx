@@ -1,6 +1,6 @@
 import styles from "./Timeline.module.scss";
 import TimelineItem from "./TimelineItem";
-import timelineData from "@/data/timeline.json";
+import timelineData from "@/_data/timeline.json";
 
 export function Timeline() {
   return (

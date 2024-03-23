@@ -1,6 +1,6 @@
 import styles from "./Socials.module.scss";
-import socialsData from "@/data/socials.json";
-import Card from "@/components/Card";
+import socialsData from "@/_data/socials.json";
+import Card from "@/_components/Card";
 
 export function Socials() {
   return (

@@ -4,7 +4,7 @@ import styles from "./Navbar.module.scss";
 import Link from "next/link";
 import Image from "next/image";
 import cn from "classnames";
-import { capitalizeFirstLetter } from "@/lib/helpers";
+import { capitalizeFirstLetter } from "@/_lib/helpers";
 import { Profile } from "./Profile";
 
 export function Navbar() {
