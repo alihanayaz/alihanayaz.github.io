@@ -35,6 +35,7 @@ export function Navbar() {
                   width={24}
                   height={24}
                   alt={link.label}
+                  priority={true}
                 ></Image>
               </div>
               <span>{capitalizeFirstLetter(link.label)}</span>
