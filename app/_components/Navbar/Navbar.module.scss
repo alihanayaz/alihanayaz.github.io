@@ -10,11 +10,11 @@
   }
 
   @mixin active {
-    background-color: $background-color-hover;
-    color: $text-color;
+    background-color: $slate-50;
+    color: $slate-950;
 
     .icon {
-      background-color: $background-color-dark;
+      background-color: $slate-950;
 
       & > * {
         filter: invert(1);
@@ -24,30 +24,39 @@
 
   .list {
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
     font-size: $font-sm;
     flex-wrap: wrap;
     gap: $spacing-xs;
+
+    @include media-query(large) {
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+    }
 
     .listItem {
       display: flex;
       justify-content: flex-start;
       align-items: center;
       gap: $spacing-sm;
-      padding: $spacing-md;
+      padding: $spacing-sm $spacing-md;
+      border-radius: $radius-sm;
+      width: 100%;
       @include transition-properties;
 
       .icon {
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: $background-color;
+        background-color: $slate-50;
         padding: $spacing-sm;
         border-radius: $radius-sm;
         @include transition-properties;
 
-        & > * {
+        & > img {
           width: $font-sm;
           height: $font-sm;
           @include transition-properties;
@@ -55,6 +64,7 @@
       }
 
       @include media-query(large) {
+        width: max-content;
         &:hover {
           @include active;
         }

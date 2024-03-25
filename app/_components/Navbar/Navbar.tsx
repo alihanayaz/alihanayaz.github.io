@@ -10,17 +10,19 @@ import { Profile } from "./Profile";
 export function Navbar() {
   const pathname = usePathname();
 
-  const links = [
+  const routes = [
     { label: "home", href: "/" },
     { label: "journey", href: "/journey" },
+    { label: "bookmarks", href: "/bookmarks" },
   ];
 
   return (
     <div className={styles.navbar}>
       <Profile />
       <div className={styles.list}>
-        {links.map((link, i) => {
-          const isActive = pathname === link.href;
+        {routes.map((link, i) => {
+          const isActive =
+            pathname === link.href || pathname.startsWith(`${link.href}/`);
           return (
             <Link
               href={link.href}
